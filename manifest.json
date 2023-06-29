@@ -7,7 +7,7 @@
   },
   "permissions": ["activeTab", "storage"],
   "content_scripts": [{
-    "matches": ["https://englishlessons.dev.loc/*"],
+    "matches": ["*://*/*"],
     "js": [
       "content_scripts/RgKeymap.js",
       "content_scripts/PopupKeymap.js",
