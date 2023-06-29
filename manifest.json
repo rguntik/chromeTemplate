@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "RgKeymap chrome extension template",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [{
+    "matches": ["https://englishlessons.dev.loc/*"],
+    "js": [
+      "content_scripts/RgKeymap.js",
+      "content_scripts/PopupKeymap.js",
+      "content_scripts/content.js"
+    ]
+  }]
+}
