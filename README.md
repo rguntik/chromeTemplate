@@ -12,4 +12,13 @@ To configure key combinations, you need to modify the `content.js` file. In this
 
 You can find detailed instructions on configuring key combinations in the [RgKeymap library usage guide](https://github.com/rguntik/rgKeymap).
 
+Here's an example of adding a keymap using `PopupKeymap`:
+
+```javascript
+// Add a keymap using PopupKeymap
+popupKeymap.add(['ControlLeft', 'AltLeft', 'Numpad7'], () => {
+    alert('Press Control + Alt + Numpad 7');
+}, 'Press Control + Alt + Numpad 7');
+```
 If you have any further changes or additions, please let me know.
+
